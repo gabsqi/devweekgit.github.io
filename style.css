@@ -1,138 +1,119 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: Arial, sans-serif; 
+}
+
+body {
+  background-color: #e4e4e4; 
 }
 
 .resume-contents {
-    min-height: 100vh;
-    width: 80%;
-    margin: 2rem auto;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
+  min-height: 100vh;
+  width: 90%; 
+  max-width: 1200px; /* ADICIONADO: limita largura máxima */
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  background-color: white; /* ADICIONADO: fundo principal */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 .left-section {
-    grid-column: span 2;
-    height: 100%;
-    background-color: #999999;
+  background-color: #999999;
+  padding: 2rem; 
 }
 
 .right-section {
-    grid-column: span 5;
-    height: 100%;
-    background-color: #424a50;
-    border-radius: 0px 60px 0px 0px;
-}
-
-.left-section-contents{
-    padding: 2rem 2rem;
+  background-color: #424a50;
+  border-radius: 0 60px 0 0;
+  padding: 2rem; 
+  color: #ffffff; 
 }
 
 .profile {
-    width: 100%;
-    border-bottom: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
+  padding-bottom: 1.5rem; /* ADICIONADO */
+  margin-bottom: 1.5rem; /* ADICIONADO */
+  text-align: center; /* ADICIONADO */
 }
 
-.profile .profile-image {
-    width: 100%;
-    border-radius: 100%;
+.profile-image {
+  width: 150px; /* MODIFICADO: evita imagem gigante */
+  height: 150px; 
+  object-fit: cover; 
+  border-radius: 50%;
+  margin-bottom: 1rem; 
 }
 
 .name {
-    color: #D6DBDF;
-    font-size: 30px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+  color: #D6DBDF;
+  font-size: 24px; /* AJUSTADO */
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .profession {
-    color: #eeeeee;
-    font-size: 20px;
-    text-transform: uppercase;
-    text-align: center;
+  color: #eeeeee;
+  font-size: 16px; /* AJUSTADO */
+  text-align: center;
 }
 
-/* .contact-info { border-bottom: 2px solid #1B2631; } */
 .left-title {
-    color: #eeeeee;
-    font-size: 20px;
+  color: #ffffff;
+  font-size: 18px;
+  margin-top: 1rem; 
 }
 
-.contact-info ul {
-    padding-top: 1.5rem;
+.contact-info ul,
+.skills ul {
+  padding-top: 1rem;
 }
 
 .contact-info ul li,
-.references ul li {
-    padding: .4rem 0;
-    color: #eeeeee;
-}
-
-.contact-info ul li i,
-.references ul li i {
-    padding-right: 1rem;
-    font-size: 18px;
-    color: #eeeeee;
-}
-
-.skills ul {
-    padding-top: 1.5rem;
-}
-.skills ul li p {
-    padding: .4rem 0;
-    color: #eeeeee;
-}
-
-.right-section-contents {
-    padding: 2rem 2rem;
+.skills ul li {
+  padding: .4rem 0;
+  color: #ffffff;
+  font-size: 14px; 
 }
 
 .right-title {
-    color: #eeeeee;
+  font-size: 22px; 
+  margin-bottom: 1rem; 
+  border-bottom: 2px solid rgba(255,255,255,0.3); 
+  padding-bottom: .5rem; 
 }
 
 .gap {
-    padding-bottom: 2rem;
+  margin-bottom: 2rem; /* MODIFICADO: melhor espaçamento */
 }
+
 .about-me-contents {
-    font-size: 18px;
-    color: #eeeeee;
+  font-size: 16px;
+  line-height: 1.6; /* ADICIONADO: melhora leitura */
 }
 
-.experience-contents,
-.education-contents,
-.awards-contents {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding-bottom: 2rem;
-    color: #F1F8FD;
+.experience-contents {
+  display: grid;
+  grid-template-columns: 1fr 2fr; 
+  gap: 1rem; 
 }
 
-.exp-company-name,
-.education-school-name,
-.awards-company-name {
-    font-size: 25px;
-    font-weight: bold;
+.exp-company-name {
+  font-size: 18px; 
+  font-weight: bold;
 }
 
-.exp-time-period,
-.educationp-time-period,
-.awards-time-period {
-    font-size: 18px;
+.exp-time-period {
+  font-size: 14px; 
 }
 
-.exp-position,
-.education-subject,
-.awards-name {
-    font-size: 25px;
+.exp-position {
+  font-size: 18px; 
 }
 
-.exp-desc,
-.education-desc,
-.awards-desc {
-    font-size: 16px;
-    padding-left: 5px;
+.exp-desc {
+  font-size: 14px;
 }
